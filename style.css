@@ -1,0 +1,73 @@
+@font-face {
+    font-family: knuth_font;
+    src: url(cmunbi.ttf);
+}
+
+:root {
+    --brown: rgb(99, 87, 81);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(230, 230, 230);
+}
+
+body {
+    font-family: "Computer Modern Serif", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-title {
+    padding: 5px;
+    font-size: 3.5rem;
+    color: var(--brown);
+}
+
+.page-wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main-pic-container img {
+    min-width: 40%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.main-pic-container {
+    margin-right: 20px;
+
+}
+
+.col-flexbox {
+    display: flex;
+    flex-flow: flex-start;
+}
+
+.quote {
+    margin-bottom: 1em;
+}
+
+.link {
+    margin: 0 5px;
+}
+
+.main-section {
+    padding-bottom: 1em;
+}
+
+.section {
+    border-top: 4px solid black;
+}
+
+.section-title {
+    font-size: 2em;
+    padding: .3em;
+    color: var(--brown);
+}
