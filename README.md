@@ -6,3 +6,5 @@ On this site, you can find my
 - Publications
 - Reccomendations
 - and (not) many more!
+
+The compilation of the Computer Modern font used for this site can be found [comp](https://www.checkmyworking.com/cm-web-fonts/),thank Andrey V. Panov for the compliation on Prof. Knuth for the development!
