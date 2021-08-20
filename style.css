@@ -1,10 +1,6 @@
-@font-face {
-    font-family: knuth_font;
-    src: url(cmunbi.ttf);
-}
-
 :root {
     --brown: rgb(99, 87, 81);
+    --lightBlack: rgb(51, 46, 46)
 }
 
 * {
@@ -21,6 +17,7 @@ body {
 a {
     text-decoration: none;
     color: var(--brown);
+    font-weight: bold;
 }
 
 .main-title {
@@ -35,14 +32,17 @@ a {
 }
 
 .main-pic-container img {
-    min-width: 40%;
+    min-width: 15vw;
     max-width: 100%;
+    min-height: 30vh;
     height: auto;
     object-fit: contain;
+
 }
 
 .main-pic-container {
     margin-right: 20px;
+    margin-bottom: 10px;
 
 }
 
@@ -51,20 +51,27 @@ a {
     flex-flow: flex-start;
 }
 
+.main-description {
+    margin: 1vh 8vw 0 2vw;
+}
+
 .quote {
     margin-bottom: 1em;
 }
 
 .link {
-    margin: 0 5px;
+    padding-top: .5vh;
+    margin: 0 3px 0 6px;
 }
 
 .main-section {
     padding-bottom: 1em;
 }
 
+/*-----MAIN SECTION ENDS------*/
+
 .section {
-    border-top: 4px solid black;
+    border-top: 4px solid var(--lightBlack);
     padding-bottom: 1em;
     padding-left: 1em;
 }
@@ -73,4 +80,91 @@ a {
     font-size: 2em;
     padding: .5em .3em;
     color: var(--brown);
+}
+
+/*------------SLECTED PHOTOS BEGINS--------------*/
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.image-flexbox {
+    display: flex;
+    flex: 33%;
+    text-align: center;
+}
+
+
+
+.selcted-image p {
+    padding-top: 7px;
+    font-style: italic;
+
+}
+
+.selcted-image img {
+    min-width: 15vw;
+    max-width: 95%;
+    height: 30vh;
+    height: auto;
+    object-fit: cover;
+}
+
+/*.selcted-image {
+    border-top: 10px solid var(--lightBlack);
+    border-bottom: 10px solid var(--lightBlack);
+    border-right: 5px solid var(--lightBlack);
+    border-left: 5px solid var(--lightBlack);
+
+}*/
+
+
+
+
+footer {
+    border-top: 4px dashed var(--lightBlack);
+    text-align: center;
+    font-size: small;
+    padding: 6vh 0 4vh 0;
+
+}
+
+
+/*----------------tooltip------------------*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+    /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    margin: 19px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+/*Phone adjustments*/
+
+@media only screen and (max-width: 800px) {
+    .main-pic-container img {
+        min-width: 25vw;
+
+    }
 }
