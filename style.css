@@ -1,5 +1,6 @@
 :root {
     --brown: rgb(99, 87, 81);
+    --light-blue: #add8e6;
     --lightBlack: rgb(51, 46, 46)
 }
 
@@ -12,12 +13,6 @@
 
 body {
     font-family: "Computer Modern Serif", sans-serif;
-}
-
-a {
-    text-decoration: none;
-    color: var(--brown);
-    font-weight: bold;
 }
 
 .main-title {
@@ -34,7 +29,7 @@ a {
 .main-pic-container img {
     min-width: 15vw;
     max-width: 100%;
-    min-height: 30vh;
+    min-height: 35vh;
     height: auto;
     object-fit: contain;
 
@@ -43,7 +38,7 @@ a {
 .main-pic-container {
     margin-right: 20px;
     margin-bottom: 10px;
-
+    margin-top: 30px;
 }
 
 .col-flexbox {
@@ -130,6 +125,19 @@ footer {
 
 }
 
+/*----------link-----------------*/
+
+a {
+    text-decoration: none;
+    color: var(--brown);
+    font-weight: bold;
+}
+
+
+a:hover {
+    background-color: var(--brown);
+    color: var(--light-blue);
+}
 
 /*----------------tooltip------------------*/
 .tooltip {
