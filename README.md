@@ -1,4 +1,4 @@
 # personalWebsite
-My academic-oriented personal site. 
+My (academic-oriented) personal site. 
 
-The compilation of the Computer Modern font used for this site can be found [comp](https://www.checkmyworking.com/cm-web-fonts/), thanks Andrey V. Panov for the compliation and Prof. Knuth for the orginal development!
+This website uses a compilation of Donald Knuth's the Computer Modern font which was created by Andrey V. Panov. It can be found [here](https://www.checkmyworking.com/cm-web-fonts/). 
