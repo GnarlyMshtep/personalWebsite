@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="fonts/Serif/cmun-serif.css">
 
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
 
 <body>
@@ -23,41 +22,33 @@
     <div class="page-wrapper">
         <div class="main-section">
             <h1 class="main-title">Matan Shtepel</h1>
+            <h2><a href="matan_shtepel_cv.pdf">CV</a></h2>
 
             <div class="col-flexbox">
                 <div class="main-pic-container">
                     <img src="images/matanPic.jpg" alt="matan shtepel" title="your standard academic portrait">
                 </div>
-                <p class="main-description">Hello! I am an undergraduate at UCLA, studying computer science and
-                    mathematics, and currently, I am being advised by <a href="http://web.cs.ucla.edu/~rafail/">Prof.
-                        Rafail Ostrovsky</a> and collaborating with <a
-                        href="https://www.linkedin.com/in/jacob-zhang-9a767a140/">Jacob Zhang</a>. In particular, we are
-                    working in Multi-Party Computation (MPC) with an emphasis on Distributed Oblivious RAM protocols.
-                    Additionally, I organize the <a href="ucla_tcs_guild.html">UCLA TCS Guild</a>. You can find my <a href="matan_shtepel_cv.pdf">CV here</a>.
-                    <br><br>
-                    Previously, I collaborated with Dr. Mark Burgin on the axiomatic theory of algorithms, our joint
-                    paper, "On Totalization of Computable Functions in a Distributive Environment" <a href="#pubs">was
-                        recently accepted!</a> Further back, I worked with <a
-                        href=http://www.clifford.org/wpezzag/talks.html>Dr. William Pezzaglia</a> on quaternion
-                        graphics.<br>
-                        <br>
+                <p class="main-description">Howdy! I am an undergraduate at UCLA studying computer science and
+                    mathematics. 
+                    I am fortunate to be advised by <a href="http://web.cs.ucla.edu/~rafail/">Prof. Rafail Ostrovsky (UCLA)</a> 
+                    and <a href="https://www.cis.upenn.edu/~fbrett/">Prof. Brett Falk (UPenn)</a>, researching 
+                    <a href="https://en.wikipedia.org/wiki/Secure_multi-party_computation">Secure Multi-Party Computation</a>, <a href="https://en.wikipedia.org/wiki/Oblivious_RAM">Oblivious RAM (ORAM)</a>, and cryptography at large. 
+                    In particular, we are working on advancing the theory and practice of Distributed ORAM (DORAM), planning to submit papers to Crypto23' and USENIX23' in February. 
+                    Recently, I applied for PhD programs in cryptography, theoretical computer science, and blockchain, all of which I am broadly interested in.   
+                    You can find my <a href="matan_shtepel_cv.pdf">CV here</a>.
 
-                        When not pondering abstract problem in and out the standard curriculum or building subpar
-                        academic websites, I enjoy collaborating on
-                        various <a href="https://github.com/GnarlyMshtep" title="my embarrassing GitHub page"> software
-                            projects</a>, reading (now reading Quantum Computing since Democritus and it's awesome!), <a
-                            href="https://rawgnarly.com/" title="sry the website's kinda broken">goofing-around with
-                            fashion</a>, exercising decently often, badly surfing, <a
-                            href="https://www.instagram.com/p/B8EsNUVD8rR/">mediocrely snowboarding</a>, and spending an
-                        unhealthy amount of time on looking at mathematician and scientists' bios on Wikipedia. Next
-                        year, I intend
-                        to apply for graduate school
-                        and pursue a PhD in
-                        theoretical
-                        computer science.<br><br></p>
-                <i>
-                    <h2 style="padding: 5px;border:10px solid red;font-weight:900;color:red">Out of date. Will update mid-Dec. 22'</h3>
-                </i>
+                    <br><br>
+                    Along with my research activities, I organize <a href="ucla_tcs_guild.html">The UCLA TCS Guild</a> (winter23' theme: Lattices!), consult(ed) blockchain startups <a href="https://nexus.xyz">Nexus</a> and <a href="https://holonym.id">Holonym</a>, advocate for <a href="cc_to_phd.html">community college transfer students</a>, and experiment on the undergraduate TCS curriculum with <a href="http://web.cs.ucla.edu/~sherstov/">Prof. Alexander Sherstov</a>.    
+                     
+                    <br><br>
+
+                    Outside of academia and building subpar academic websites, I enjoy collaborating on
+                    various <a href="https://github.com/GnarlyMshtep" title="my embarrassing GitHub page"> software
+                        projects</a>, reading (now: Quantum Computing since Democritus & <a href="https://www.hpmor.com/">HPMOR</a>), <a
+                        href="https://rawgnarly.com/">goofing-around with
+                        fashion</a>, <a href="https://photos.app.goo.gl/LNhtETAwe6pLYztR6">running decently often</a>, surfing badly, <a
+                        href="https://www.instagram.com/p/B8EsNUVD8rR/">mediocrely snowboarding</a>, taking interest in rationality, and spending an
+                    unhealthy amount of time on looking at mathematician and scientists' bios on Wikipedia. <br><br></p>
             </div>
             <p class="quote">"It is by logic that we prove, but by intuition that we discover." (J. Henri Poincaré)
             </p>
@@ -83,6 +74,25 @@
                         Systems (GPAA). Once published online, will be available <a
                             href="https://doi.org/10.1080/17445760.2021.2016754">here</a>.</li>
                 </ol>
+                <br>
+                <h2>In-Progress (added just for PhD apps)</h2>
+                <ol>
+                    <li>
+                        <b>Asymptotically Efficient Maliciously-Secure DORAM and RAM-MPC</b> <br>
+                        We give the first malicious construction of Distributed ORAM while matching the asymptotics of the best-known semi-honest constructions. As a corollary we give the first maliciously-secure MPC with logarithmic random access.<br>
+                        B. Falk, D. Noble, R. Ostrovsky, M. Shtepel, J. Zhang<br>
+                        Intend to submit to Crypto23 (early February)<br>
+                    </li>
+                    <li>
+                        <b>Practical Maliciously-Secure DORAM & RAM-MPC</b> <br>
+                        We construct the most practically efficient DORAM to date. We provide an open-source implementation that we contribute
+                        to Xiao Wang’s EMP-toolkit. For practical database sizes of upwards of 223 elements, we beat previous constructions (which
+                        achieved only semi-honest security) by a factor of at least 100x.<br>
+                        B. Falk, S. Kelman D. Noble, R. Ostrovsky, M. Shtepel, J. Zhang<br>
+                        Intend to submit to USENIX23 (early February)
+                    </li>
+                </ol>
+
             </div>
 
             <!-- <div class="section">
@@ -162,6 +172,21 @@
             </div>
             <div class="section">
                 <h4 class="section-title">Selected Photos</h4>
+                 <div class="image-flexbox">
+                    <div class="selcted-image" style="flex:.4">
+                        <img src="images/jacob_whiteboard.jpg">
+                        <p>Research partner <a href="https://www.linkedin.com/in/jacob-zhang-9a767a140/">Jacob Zhang</a> wearing the cryptography shirt I made for him in front of the whiteboard we hung in our room!</p>
+                    </div>
+                    <div class="selcted-image" style="flex:.3">
+                        <img src="images/wigderson_poster.jpg">
+                        <p>Can you recognize the poster above my bed?</p>
+                    </div>
+                    <div class="selcted-image" style="flex: .395;">
+                        <img src="images/blackboard_goof.jpg">
+                        <p>Yah? That construction on the board behind me? We found a flaw in the proof about 3 hours later 😎</p>
+                    </div>
+
+                </div>
                 <div class="image-flexbox">
                     <div class="selcted-image" style="flex:.4">
                         <img src="images/kyleesBirthday.jpg">
@@ -194,13 +219,13 @@
 
                 </div>
                 <div class="section">
-                    <h4 class="section-title">Personal Favorites</h4>
+                    <h4 class="section-title">Academic Obligation</h4>
+                    As an (aspiring) academic, I feel obligated to say there will be a blog coming soon. Don't worry! I will update twice during summer, then never again after 😏.
+                    <!--
                     To wrap it up, here are some personal favorites from the many facets of life:
                     <div class="split-page-writing">
                         <div class="col1">
                             <ul>
-                                <li><u>Proof Technique:</u> Diagonalization for the win! Shout out Cantor!
-                                </li>
                                 <li><u>Song:</u> <a href="https://open.spotify.com/track/3kbUFmLV5SHVQonfOpNgkd">San
                                         Tropez</a> by Pink
                                     Floyd. I promise, give it a listen! Catch all my fav songs <a
@@ -225,9 +250,10 @@
 
                         </div>
                     </div>
+                    -->
                 </div>
                 <footer>
-                    Created by Matan Shtepel, August 2021. Last edited December 2021
+                    Created by Matan Shtepel, August 2021. Last edited January 2023
                 </footer>
             </div>
 

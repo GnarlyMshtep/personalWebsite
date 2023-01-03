@@ -175,4 +175,17 @@ a:hover {
         min-width: 25vw;
 
     }
+
+    .col-flexbox {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .image-flexbox {
+        display: flex;
+        flex: 33%;
+        text-align: center;
+        flex-flow: column;
+    }
+
 }
