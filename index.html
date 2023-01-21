@@ -9,53 +9,253 @@
     <meta name="author" content="Matan Shtepel">
     <meta name="description" content="Matan Shtepel's personal academic website.">
     <meta name="audience" content="Everyone">
-    <title>UCLA Theoretical Computer Science Guild</title>
+    <title>Matan Shtepel</title>
     <link rel="icon" type="image/png" href="favicons/favicon.ico" />
 
-    <link rel="stylesheet" href="../fonts/Serif/cmun-serif.css">
+    <link rel="stylesheet" href="fonts/Serif/cmun-serif.css">
 
-    <link rel="stylesheet" href="../style.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <div class="page-wrapper">
-        <div class="main-section"style="width: 60%;">
-            <h1 class="main-title" >Distributed Oblivious Random Access Memory</h1>
+        <div class="main-section">
+            <h1 class="main-title">Matan Shtepel</h1>
+            <h2><a href="matan_shtepel_cv.pdf">CV</a></h2>
 
-                <p class="main-description">
-                    Howdy! This is Jacob Zhang and Matan Shtepel's demo of semi-honest Distributed Oblivious Random Access Memory. 
-                    Here you can find our Beamer, our paper, and a recording of our presentation.
-                    
-                    Query DORAM below! 
-                </p>
-                <br><br><br>
-                <form id="doramQueryForm">
-                      <input name="address"type="number" min="1" value="1" max="1048575">
-                      <label>Address</label>
-                      
-                      <input type="number" name="payload" min="1" value="2" max="4294967296">
-                      <label id="payload-label">Payload</label>
+            <div class="col-flexbox">
+                <div class="main-pic-container">
+                    <img src="images/matanPic.jpg" alt="matan shtepel" title="your standard academic portrait">
+                </div>
+                <p class="main-description">Howdy! I am an undergraduate at UCLA studying computer science and
+                    mathematics. 
+                    I am fortunate to be advised by <a href="http://web.cs.ucla.edu/~rafail/">Prof. Rafail Ostrovsky (UCLA)</a> 
+                    and <a href="https://www.cis.upenn.edu/~fbrett/">Prof. Brett Falk (UPenn)</a>, researching 
+                    <a href="https://en.wikipedia.org/wiki/Secure_multi-party_computation">Secure Multi-Party Computation</a>, <a href="https://en.wikipedia.org/wiki/Oblivious_RAM">Oblivious RAM (ORAM)</a>, and cryptography at large. 
+                    In particular, we are working on advancing the theory and practice of Distributed ORAM (DORAM), planning to submit papers to Crypto23' and USENIX23' in February. 
+                    Recently, I applied for PhD programs in cryptography, theoretical computer science, and blockchain, all of which I am broadly interested in.   
+                    You can find my <a href="matan_shtepel_cv.pdf">CV here</a>.
 
-                        <select name="rw" id="rw-select">
-                            <option value="write">Write</option>
-                            <option value="read">Read</option> 
-                        </select>
+                    <br><br>
+                    Along with my research activities, I organize <a href="ucla_tcs_guild.html">The UCLA TCS Guild</a> (winter23' theme: Lattices!), consult(ed) blockchain startups <a href="https://nexus.xyz">Nexus</a> and <a href="https://holonym.id">Holonym</a>, advocate for <a href="cc_to_phd.html">community college transfer students</a>, and experiment on the undergraduate TCS curriculum with <a href="http://web.cs.ucla.edu/~sherstov/">Prof. Alexander Sherstov</a>.    
+                     
+                    <br><br>
 
-                    <input type="submit" >
-                </form>
+                    Outside of academia and building subpar academic websites, I enjoy collaborating on
+                    various <a href="https://github.com/GnarlyMshtep" title="my embarrassing GitHub page"> software
+                        projects</a>, reading (now: Quantum Computing since Democritus & <a href="https://www.hpmor.com/">HPMOR</a>), <a
+                        href="https://rawgnarly.com/">goofing-around with
+                        fashion</a>, <a href="https://photos.app.goo.gl/LNhtETAwe6pLYztR6">running decently often</a>, surfing badly, <a
+                        href="https://www.instagram.com/p/B8EsNUVD8rR/">mediocrely snowboarding</a>, taking interest in rationality, and spending an
+                    unhealthy amount of time on looking at mathematician and scientists' bios on Wikipedia. <br><br></p>
+            </div>
+            <p class="quote">"It is by logic that we prove, but by intuition that we discover." (J. Henri Poincaré)
+            </p>
+            <div class="col-flexbox">
+                <!--<h3>Quick Links:</h3>
 
-                <h5 class="main-description" id="updateReport"></h5>
-               
-        </div>
-    </div>
-    <footer>
-        Website created by Matan Shtepel, August 2021. This page was last edited November 2022.
-    </footer>
-        <script type="text/javascript" src="HackLodge_demo.js"></script>
+                <a class="link" href="" onclick="alert('Avalabile Soon!')">Blog</a>
+                <a class="link" href="https://github.com/GnarlyMshtep">Github</a>
+                <a class="link" href="" onclick="alert('Avalabile Soon!')">CV</a>
+                <a class="link" href="/#contactSec">Contact</a>
+                <a class="link" href="">Personal Favorites</a>
+            </div>-->
 
-</body>
+
+            </div>
+            <div class="section">
+                <a name="pubs"></a>
+                <h4 class="section-title">Publications</h4>
+                <ol>
+                    <li>Mark Burgin, Matan Shtepel <i>"On Totalization of Computable Functions in a Distributive
+                            Environment"</i>, accepted to the International Journal of Parallel, Emergent and
+                        Distributed
+                        Systems (GPAA). Once published online, will be available <a
+                            href="https://doi.org/10.1080/17445760.2021.2016754">here</a>.</li>
+                </ol>
+                <br>
+                <h2>In-Progress (added just for PhD apps)</h2>
+                <ol>
+                    <li>
+                        <b>Asymptotically Efficient Maliciously-Secure DORAM and RAM-MPC</b> <br>
+                        We give the first malicious construction of Distributed ORAM while matching the asymptotics of the best-known semi-honest constructions. As a corollary we give the first maliciously-secure MPC with logarithmic random access.<br>
+                        B. Falk, D. Noble, R. Ostrovsky, M. Shtepel, J. Zhang<br>
+                        Intend to submit to Crypto23 (early February)<br>
+                    </li>
+                    <li>
+                        <b>Practical Maliciously-Secure DORAM & RAM-MPC</b> <br>
+                        We construct the most practically efficient DORAM to date. We provide an open-source implementation that we contribute
+                        to Xiao Wang’s EMP-toolkit. For practical database sizes of upwards of 223 elements, we beat previous constructions (which
+                        achieved only semi-honest security) by a factor of at least 100x.<br>
+                        B. Falk, S. Kelman D. Noble, R. Ostrovsky, M. Shtepel, J. Zhang<br>
+                        Intend to submit to USENIX23 (early February)
+                    </li>
+                </ol>
+
+            </div>
+
+            <!-- <div class="section">
+            <h4 class="section-title">Academic Interests</h4>
+
+            <p>At large, even though I am primarily computer science and mathematics, I would claim to be fascinated
+                with
+                philosophy, and physics. At this early point of my academic journey, I don’t feel quite comfortable
+                stating
+                specific (aimed) areas of work or expertise, particularly seeing that I can’t help to enjoy every single
+                course I take and frantically curious about any technical term I hear, but, for those interested in some
+                further categorization, I am mostly interested in “pure-ish” areas lying in the intersection of maths
+                and
+                cs
+                such as complexity, cryptography, and algorithms.
+            </p>
+
+            <p>To compensate for my high-uncertainty range about my desired field of expertise, for those out there
+                still
+                hoping to understand “who is Matan Shtepel?” I did my best to articulate what drives my particular
+                scholarly
+                curiosities, and then, my academic ambitions. The following lists may not be entirely exhaustive, but
+                hey,
+                they are something. If the following seems a bit romantic, well, that means you really are learning
+                about me :)
+            </p>
+
+            <p>For starters, I have always, still do, and likely always will, have a deep appreciation for order, rules,
+                and structure, which I now understand are the only ways to exceed our inborn biases and human notions,
+                but
+                more personally, I think games without rules are simply no fun -- at least not in an
+                intellectual-challenge
+                sense, which bring me great joy. That being said, there are few things that I find as fulfilling as
+                tackling
+                hard tasks, distinctly those which demand a combination of creativity and deductive reasoning. As
+                painful as
+                the process leading up to it often is, I find the moment in which my brain switches from the “I have no
+                knowledge at all of this strange coalescence of phrases and symbols” state to “I understand!” virtually
+                addicting. Beyond such practical concerns, I am driven by the beauty of subjects I am so fortunate to
+                study,
+                and this is tougher to describe as its not “rational” or explicit, perhaps its about admiring successful
+                information compression or the awe of the achievement of my fellow ape-descendants, but when I watched a
+                Bertnard Russel interview, studied the fundamentals of topology, or get the first glimpse of Turing
+                Machines, my heart was just filled with incredible feeling -- truly indescribable.
+            </p>
+
+            <p>Simply (and naively) stated, I am pursuing a career in academia because I believe contributing to the
+                ever-growing pool of human knowledge and training others to do the same is the most noble way I can
+                spend my
+                life/finite time on this earth, and beyond, as far as my limited predictive powers enable me to see, I
+                think
+                I will find deep happiness within that career. Being able to deeply delve into a topic without a brow
+                raised
+                and a “you are thinking too much” stated, is a privilege I am willing to work hard for. I must say, from
+                time to time I do struggle with the infatuation of visions of fame and glory, but I do my best to stick
+                to
+                my purest motives and let the many reasons and experiences above determine my life-long ambitions.
+                While it’s both difficult to explicitly articulate and awkward to self-state, I would say my burning
+                curiosity, not quite fixated on application, chasing a paramount understanding of the space of ideas,
+                and
+                thirsty for an earnest challenge.
+            </p>
+
+        </div>-->
+
+
+
+
+
+            <div id="contactSec" class="section">
+                <h4 class="section-title">Conatct Me!</h4>
+                <p>If you are considering contacting me, please, do not hesitate! I am happy to receive any and all
+                    questions,
+                    offers, suggestions and vegan steak recipes (but please, nothing more 😉).
+                    <b>{first}.{last} <i>at</i> g.ucla.edu</b></p>
+
+            </div>
+            <div class="section">
+                <h4 class="section-title">Selected Photos</h4>
+                 <div class="image-flexbox">
+                    <div class="selcted-image" style="flex:.4">
+                        <img src="images/jacob_whiteboard.jpg">
+                        <p>Research partner <a href="https://www.linkedin.com/in/jacob-zhang-9a767a140/">Jacob Zhang</a> wearing the cryptography shirt I made for him in front of the whiteboard we hung in our room!</p>
+                    </div>
+                    <div class="selcted-image" style="flex:.3">
+                        <img src="images/wigderson_poster.jpg">
+                        <p>Can you recognize the poster above my bed?</p>
+                    </div>
+                    <div class="selcted-image" style="flex: .395;">
+                        <img src="images/blackboard_goof.jpg">
+                        <p>Yah? That construction on the board behind me? We found a flaw in the proof about 3 hours later 😎</p>
+                    </div>
+
+                </div>
+                <div class="image-flexbox">
+                    <div class="selcted-image" style="flex:.4">
+                        <img src="images/kyleesBirthday.jpg">
+                        <p>Celebrating Kylee's Birthday</p>
+                    </div>
+                    <div class="selcted-image" style="flex:.3">
+                        <img src="images/Russel'sParadox.jpg">
+                        <p>Wearing my favorite paradox</p>
+                    </div>
+                    <div class="selcted-image" style="flex: .395;">
+                        <img src="images/goneSurfingResized.jpg">
+                        <p>After a relaxing surf</p>
+                    </div>
+
+                </div>
+                <br>
+                <div class="image-flexbox">
+                    <div class="selcted-image" style="flex:.30">
+                        <img src="images/atJoshTree.jpg">
+                        <p>At the Josh tree park</p>
+                    </div>
+                    <div class="selcted-image" style="flex:.3">
+                        <img src="images/lexAndI.jpg">
+                        <p>“Remember, all I’m offering is the truth. Nothing more."</p>
+                    </div>
+                    <div class="selcted-image" style="flex: .395;">
+                        <img src="images/classicalyPositioned.jpg">
+                        <p>As you may find me on a regular afternoon...</p>
+                    </div>
+
+                </div>
+                <div class="section">
+                    <h4 class="section-title">Academic Obligation</h4>
+                    As an (aspiring) academic, I feel obligated to say there will be a blog coming soon. Don't worry! I will update twice during summer, then never again after 😏.
+                    <!--
+                    To wrap it up, here are some personal favorites from the many facets of life:
+                    <div class="split-page-writing">
+                        <div class="col1">
+                            <ul>
+                                <li><u>Song:</u> <a href="https://open.spotify.com/track/3kbUFmLV5SHVQonfOpNgkd">San
+                                        Tropez</a> by Pink
+                                    Floyd. I promise, give it a listen! Catch all my fav songs <a
+                                        href="https://open.spotify.com/playlist/3kAW3gAdjVXgwEgaC0F5T3?si=1bf9f871551e42bf">here</a>.
+                                </li>
+
+                                <li><u>YouTube Video:</u> I found this<a
+                                        href="https://www.youtube.com/watch?v=hEUO6pjwFOo&t=2s">Robert Miles video</a>
+                                    on
+                                    the
+                                    orthogonality thesis quite profound</li>
+                                <li><u>YouTube Channel:</u> <a
+                                        href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw">3b1b</a> No
+                                    doubt.
+                                </li>
+                                <li><u>Podcast:</u> <a href="https://lexfridman.com/podcast/">The Lex Fridman
+                                        Podcast</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col2">
+
+                        </div>
+                    </div>
+                    -->
+                </div>
+                <footer>
+                    Created by Matan Shtepel, August 2021. Last edited January 2023
+                </footer>
+            </div>
 
             <!--
 To do: 
