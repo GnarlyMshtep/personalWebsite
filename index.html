@@ -75,24 +75,41 @@
                             Environment"</i>, accepted to the International Journal of Parallel, Emergent and
                         Distributed
                         Systems (GPAA). Once published online, will be available <a
-                            href="https://doi.org/10.1080/17445760.2021.2016754">here</a>.</li>
+                            href="https://doi.org/10.1080/17445760.2021.2016754">here</a>.
+                    </li>
                 </ol>
                 <br>
-                <h2>In-Progress (added just for PhD apps)</h2>
+                <h2>Submitted (added just for PhD apps)</h2>
+                    <ol>
+                        <li>
+                            <b>GigaDORAM: Breaking the Billion Address Barrier</b> <br>
+                            We design and implement GigaDORAM, a novel 3-server Distributed Oblivious RAM (DORAM) protocol. GigaDORAM features poly-logarithmic computation and communication which is comparable to that of other hierarchical based (D)ORAMs, but with an 100x reduction in rounds per query. At N= 2^{19}, 2^{25}, 2^{31} we achieve over 10x, 160x, 2500x improvement to queries/sec over state-of-the-art, respectively.  When N = 2^{31}, our DORAM is able to perform over 700 queries per second while previous constructions could not handle even a single query per second (see <a href="#fig1">Figure 1</a>). Pre-eprint version is avalabile a <a href="pdfs/GigaDORAM_Breaking_the_Billion_Address_Barrier.pdf">here</a>.<br>
+                            B. Falk, R. Ostrovsky, M. Shtepel, J. Zhang<br>
+                            Submitted USENIX23 (February deadline) <br>
+                            <img id="fig1" src="images/GigaDORAM_pref_graph.jpg" style="max-width: 20%; max-height: 20%;">
+                            Figure 1: GigaDORAM performance compared to previous DORAM constructions. All benchmarked on comparable machines connected via comparable networks. For more information, see Section 10 <a href="pdfs/GigaDORAM_Breaking_the_Billion_Address_Barrier.pdf">pre-Eprint version</a>. 
+                        </li>
+                    </ol>
+
+                <h2>In-Writing (added just for PhD apps)</h2>
                 <ol>
                     <li>
-                        <b>Asymptotically Efficient Maliciously-Secure DORAM and RAM-MPC</b> <br>
-                        We give the first malicious construction of Distributed ORAM while matching the asymptotics of the best-known semi-honest constructions. As a corollary we give the first maliciously-secure MPC with logarithmic random access.<br>
+                        <b>DORAM revisited: Maliciously secure RAM-MPC with logarithmic overhead</b> <br>
+                        We give the first malicious construction of Distributed ORAM while matching the asymptotics of the best-known semi-honest constructions. As a corollary we give the first maliciously-secure MPC with <i>logarithmic</i>-overhead random access. We show generic techniques (ORAM + MPC + GMW Compiler) are not sufficient for obtaining these results.<br>
                         B. Falk, D. Noble, R. Ostrovsky, M. Shtepel, J. Zhang<br>
-                        Intend to submit to Crypto23 (early February)<br>
+                        Intend to submit to TCC/Asiacrypt
                     </li>
                     <li>
-                        <b>Practical Maliciously-Secure DORAM & RAM-MPC</b> <br>
-                        We construct the most practically efficient DORAM to date. We provide an open-source implementation that we contribute
-                        to Xiao Wang’s EMP-toolkit. For practical database sizes of upwards of 223 elements, we beat previous constructions (which
-                        achieved only semi-honest security) by a factor of at least 100x.<br>
-                        B. Falk, S. Kelman D. Noble, R. Ostrovsky, M. Shtepel, J. Zhang<br>
-                        Intend to submit to USENIX23 (early February)
+                        <b>MGigaDORAM: Practical Maliciously-Secure DORAM & RAM-MPC</b> <br>
+                        We give MGigaDORAM, the first implemented maliciously secure DORAM. Although its stricter security model, MGigaDORAM is only 4x (currently estimated) slower then most efficient semi-honest DORAM (GigaDORAM). Leveraging MGigaDORAM, we extend the replicated MPC of Lindell et al (<a href="https://eprint.iacr.org/2018/570">[CGHI]</a>) to a RAM-MPC. We show that our RAM-MPC is over 100x faster than previous implementations (which were all semi-honest). We make our implementation open-source and integrate it to Xiao Wang’s <a href="https://github.com/emp-toolkit">EMP-toolkit</a>, allowing non-expert users of the framework to execute MPC computations in the RAM model.<br>
+                        B. Falk, S. Kelman, R. Ostrovsky, M. Shtepel, J. Zhang<br>
+                        Intend to submit to CCS23 (May)
+                    </li>
+                    <li>
+                        <b>(2^n,2^n-1) poly-logarithmic maliciously-secure RAM-MPC</b> <br>
+                        We construct a (2,1) maliciously secure DORAM with logarithmic computation and communication complexity, matching the asymptotics of the best-known semi-honest constructions. Via player composition we show how to construct (2^n,2^n-1) poly-logarithmic maliciously-secure RAM-MPC.<br>
+                        B. Falk, R. Ostrovsky, M. Shtepel, J. Zhang<br>
+                        Intended submission not yet known.
                     </li>
                 </ol>
 
