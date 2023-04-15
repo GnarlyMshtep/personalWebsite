@@ -88,6 +88,7 @@ img {
     display: flex;
     flex: 33%;
     text-align: center;
+    margin: 1em auto;
 }
 
 
