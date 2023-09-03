@@ -22,22 +22,25 @@
     <div class="page-wrapper">
         <div class="main-section">
             <h1 class="main-title">Matan Shtepel</h1>
-            <h2><a href="matan_shtepel_cv.pdf">CV (sligthly more updated than website atm)</a></h2>
+            <h2><a href="matan_shtepel_cv.pdf">CV</a></h2>
 
             <div class="col-flexbox">
                 <div class="main-pic-container">
                     <img src="images/matanPic.jpg" alt="matan shtepel" title="your standard academic portrait">
                 </div>
-                <p class="main-description">Howdy! I am an undergraduate at UCLA studying computer science and
-                    mathematics. 
-                    I am fortunate to be advised by <a href="http://web.cs.ucla.edu/~rafail/">Prof. Rafail Ostrovsky (UCLA)</a> 
-                    and <a href="https://www.cis.upenn.edu/~fbrett/">Prof. Brett Falk (UPenn)</a>, researching 
-                    <a href="https://en.wikipedia.org/wiki/Secure_multi-party_computation">Secure Multi-Party Computation</a>, <a href="https://en.wikipedia.org/wiki/Oblivious_RAM">Oblivious RAM (ORAM)</a>, and cryptography at large. 
-                    In particular, we are working on advancing the theory and practice of <a href="DORAM/index.html">Distributed ORAM (DORAM)</a>, planning to submit papers to TCC and Oakland and have submitted a paper to USENIX23' in February. 
-                    You can find my <a href="matan_shtepel_cv.pdf">CV here</a>.
+                <p class="main-description">Howdy! I'm a research assistant with  <a href="https://www.cis.upenn.edu/~fbrett/">Prof. Brett Falk</a> at Penn. At Penn, I'm also working with <a href="https://pratyushmishra.com/">Pratyush Mishra</a>. My work is in cryptography. 
+                    
+                    <br><br>
+                    In December, I'll be applying to PhD programs in Cryptography and theory more broadly. You can find my CV <a href="matan_shtepel_cv.pdf">here</a>.
 
                     <br><br>
-                    Along with my research activities, I advocate for <a href="cc_to_phd.html">(ex) community college students in research</a> and organize <a href="ucla_tcs_guild.html">The UCLA TCS Guild</a> (Spring23' theme: Lattices!),
+                    Previously, I completed my undergrad at UCLA, studying computer science with a concentration in pure math. 
+                    While at UCLA, I was fortunate to be advised by <a href="http://web.cs.ucla.edu/~rafail/">Prof. Rafail Ostrovsky</a> 
+                    and <a href="https://www.cis.upenn.edu/~fbrett/">Prof. Brett Falk</a>. As an undergrad, I primarily worked on DORAM, a cryptographic primitive in the intersection of  
+                    <a href="https://en.wikipedia.org/wiki/Secure_multi-party_computation">Secure Multi-Party Computation</a>, <a href="https://en.wikipedia.org/wiki/Oblivious_RAM">Oblivious RAM (ORAM)</a> (see <a href="#Publications"></a>Publications). Along with my research, I organized the (still active!) organize <a href="ucla_tcs_guild.html">The UCLA TCS Guild</a>.
+                    
+                    <br><br>
+                    Along with my research activities, I advocate for <a href="cc_to_phd.html">(ex) community college students in research</a> and  (Spring23' theme: Lattices!),
                      
                     <br><br>
 
@@ -68,34 +71,27 @@
             </div>
             <div class="section">
                 <a name="pubs"></a>
-                <h4 class="section-title">Publications</h4>
-                <!--<ol>
+                <h4 id="Publications" class="section-title">Publications</h4>
+                All are in alphabetical order. 
+                <ol>
+                    
+                    <li>
+                        
+                        <p><b>GigaDORAM: Breaking the Billion Address Barrier (USENIX'23)</b> <br>
+                            B. Falk, R. Ostrovsky, M. Shtepel, J. Zhang<br>
+                             <br>
+                        </p> 
+                       
+                        
+                    </li>
                     <li>Mark Burgin, Matan Shtepel <i>"On Totalization of Computable Functions in a Distributive
-                            Environment"</i>, accepted to the International Journal of Parallel, Emergent and
-                        Distributed
-                        Systems (GPAA). Once published online, will be available <a
+                            Environment"</i>, (International Journal of Parallel, Emergent and
+                        Distributed Systems (GPAA)). Once published online, will be available <a
                             href="https://doi.org/10.1080/17445760.2021.2016754">here</a>.
                     </li>
                 </ol>
                 <br>
-                <h2>Submitted (added for future PhD apps)</h2>
-                    <ol>
-                        <li>
-                            <div>
-                                <p><b>GigaDORAM: Breaking the Billion Address Barrier</b> <br>
-                                    We design and implement GigaDORAM, a novel 3-server Distributed Oblivious RAM (DORAM) protocol. GigaDORAM features poly-logarithmic computation and communication which is comparable to that of other hierarchical based (D)ORAMs, but with an 100x reduction in rounds per query. At N= 2^{19}, 2^{25}, 2^{31} we achieve over 10x, 160x, 2500x improvement to queries/sec over state-of-the-art, respectively.  When N = 2^{31}, our DORAM is able to perform over 700 queries per second while previous constructions could not handle even a single query per second (see <a href="#fig1">Figure 1</a>). 
-                                    <!--Pre-eprint version is avalabile a <a href="pdfs/GigaDORAM_Breaking_the_Billion_Address_Barrier.pdf">here</a>.<br>
-                                    B. Falk, R. Ostrovsky, M. Shtepel, J. Zhang<br>
-                                    Submitted USENIX23 (February deadline) <br>
-                                </p> 
-                           
-                                <div>
-                                    <img id="fig1" src="images/GigaDORAM_pref_graph.jpg" style="max-width: 20%; max-height: 20%;">
-                                    <p style="display: block;"> Figure 1: GigaDORAM performance compared to previous DORAM constructions. All benchmarked on comparable machines connected via comparable networks. For more information, see Section 10 of the <a href="pdfs/GigaDORAM_Breaking_the_Billion_Address_Barrier.pdf">pre-Eprint version</a>. 
-                                    </p>
-                                </div>
-                            </div> 
-                        </li>
+                        
                     </ol>
 
                 <h2>In-Writing (added for future PhD apps)</h2>
