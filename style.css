@@ -29,6 +29,7 @@ body {
 .main-pic-container img {
     min-width: 15vw;
     max-width: 100%;
+    min-width: 25vw;
     min-height: 35vh;
     height: auto;
     object-fit: contain;
