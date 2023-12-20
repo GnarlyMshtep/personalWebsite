@@ -22,15 +22,15 @@ body {
 }
 
 .page-wrapper {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
 }
 
 .main-pic-container img {
     min-width: 15vw;
     max-width: 100%;
-    min-width: 25vw;
-    min-height: 35vh;
+    min-width: 20vw;
+    min-height: 30vh;
     height: auto;
     object-fit: contain;
 
@@ -177,6 +177,11 @@ a:hover {
         min-width: 25vw;
 
     }
+    .page-wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
 
     .col-flexbox {
         display: flex;
