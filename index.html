@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="fonts/Serif/cmun-serif.css">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/tt-commons.css">
 </head>
 
 <body>
@@ -26,19 +27,19 @@
 
             <div class="col-flexbox">
                 <div class="main-pic-container">
-                    <img src="images/matanPic.jpg" alt="matan shtepel" title="your standard academic portrait">
+                    <img class="main-portrait" src="images/in_shadyside_snow.jpeg" alt="matan shtepel" title="your standard academic portrait">
                 </div>
-                <p class="main-description">Howdy! I'm Matan Shtepel: second-year PhD student at Carnegie Mellon advised by the epic <a href="https://andrewilyas.com"></a> working on AI Safety. 
-                    <b>Office: Gates 9213</b>.
+                <p class="main-description">Howdy! I'm a second-year PhD student at Carnegie Mellon working on <b>AI Safety</b> with the epic <a href="https://andrewilyas.com">Andrew Ilyas</a>. <br>
+                    Office: Gates 9213.
 
                     <br><br>
-                    Previously at CMU, UPenn, and UCLA I worked on Cryptography on topics including zkSNARKs, MPC, PIR, and ORAM. Outside of research, math, and building subpar academic websites, I also enjoy <a
-                    href="https://rawgnarly.com/">
-                    fashion</a>, <a href="https://open.spotify.com/playlist/75OcKxnQkY9noMuZA8zdtc?si=31327114845047f3">Australian rock</a>, <a href="https://photos.app.goo.gl/LNhtETAwe6pLYztR6">running</a>, <a href="https://equilibriabook.com/toc/">reading</a>,  <a
-                    href="https://www.instagram.com/p/B8EsNUVD8rR/">snowboarding</a>, and spending an
-                    unhealthy amount of time on looking at mathematician and scientists' bios on Wikipedia.
+                    Previously at CMU, UPenn, and UCLA I worked on cryptography (including zkSNARKs, MPC, PIR, and ORAM). I switched to work on AI Safety because I think it is super interesting and extremely important!
                     <br><br>
-                    I'm also interested in getting students (particularly community college students) excited about and involved in research (<a href="https://www.youtube.com/watch?v=ZDjxeXfRyeY&t=57s">embarrassing example!</a>) If you're interested in having me give a talk / anything else please reach out!   
+                    Outside of research, and building subpar academic websites, I also enjoy <a
+                    href="https://rawgnarly.com/">
+                    fashion</a>, <a href="https://texcrick.bandcamp.com/album/live-in-new-york-city">Tex Crick</a>, <a href="https://photos.app.goo.gl/LNhtETAwe6pLYztR6">running</a>, <a href="https://www.joshwaitzkin.com/the-art-of-learning">reading</a>, <a href="https://www.walmart.com/ip/Hurst-s-HamBeens-15-Bean-Soup-20-oz/10295039">beans</a>, and collecting <a href="https://www.uniqlo.com/us/en/contents/lifewear-magazine/">magazines</a>.
+                    <!-- <br><br> -->
+                    <!-- I'm also interested in getting students (particularly community college students) excited about and involved in research (<a href="https://www.youtube.com/watch?v=ZDjxeXfRyeY&t=57s">embarrassing example!</a>) If you're interested in having me give a talk / anything else please reach out!    -->
 
                     <!--
                     Outside of research and building subpar academic websites, I enjoy collaborating on
@@ -54,11 +55,11 @@
                     In December, I'll be applying to PhD programs in Cryptography and theory more broadly. You can find my CV <a href="matan_shtepel_cv.pdf">here</a>.-->
                     
                     <br><br>
-                    <a href="mailto:matan.shtepel@gmail.com">Contact</a> me for pretty much any reason!
+                    <a href="mailto:matan.shtepel@gmail.com">Contact</a> me for any reason! Especially happy to hear from (ex) community college students interested in research! <small class="mono">matan.shtepel@gmail.com</small>
                         <br><br>
                 </p>
             </div>
-            <p class="quote"><i>"It is by logic that we prove, but by intuition that we discover." (Poincaré)</i>
+            <small><p class="quote"><i>"It is by logic that we prove, but by intuition that we discover." (Poincaré)</i></small>
             </p>
             <div class="col-flexbox">
                 <!--<h3>Quick Links:</h3>
@@ -77,10 +78,16 @@
                 <h4 id="Preprints" class="section-title">Preprints</h4>
                 <ol>
                     <li>
+                        <a href="">Query Optimal IOPPs for Linear Time Encodable Codes </a>  <br>
+                        A. Baweja, P. Mishra, T. Mopur (UPenn), M. Shtepel (CMU)<br>
+                        <small>We give IOPPs for linear-time encodable codes with provably optimal query-complexity.</small>
+                    </li>
+                    <li>
                         <a href="https://eprint.iacr.org/2025/737">FICS and FACS: Fast IOPPs and Accumulation via Code-Switching 
                         </a>  <br>
-                        A. Baweja, P. Mishra, T. Mopuri, M. Shtepel<br>
-                     
+                        A. Baweja, P. Mishra, T. Mopuri (UPenn), M. Shtepel (CMU)<br>
+                        <small>We give IOPPs for linear-time encodable codes with state-of-the-art query-complexity.</small>
+
                     </li>
                     <br>
                 </ol>
@@ -88,29 +95,32 @@
                 <ol>
                     <li>
                         <a href="https://eprint.iacr.org/2023/578">Malicious Security for PIR (almost) for Free
-                        </a> <b>(CRYPTO '25)</b>  <br>
-                        B. Falk, P. Mishra, M. Shtepel<br>
+                        </a> (CRYPTO '25)  <br>
+                        B. Falk, P. Mishra, M. Shtepel (UPenn)<br>
+                        <small>We describe a construction of malicious PIR from locally decodable codes with very low overhead.</small>
                      
                     </li>
                     <br>
                     <li>
-                        <a href="https://eprint.iacr.org/2023/578">DORAM revisited: Maliciously secure RAM-MPC with logarithmic overhead</a> <b>(TCC '23)</b> <br>
-                        B. Falk, D. Noble, R. Ostrovsky, M. Shtepel, J. Zhang<br>
+                        <a href="https://eprint.iacr.org/2023/578">DORAM revisited: Maliciously secure RAM-MPC with logarithmic overhead</a> (TCC '23) <br>
+                        B. Falk, D. Noble (UPenn), R. Ostrovsky, M. Shtepel, J. Zhang (UCLA)<br>
+                        <small>We give the state-of-the-art construction of maliciously-secure Distributed ORAM.</small>
                     </li>
                     <br>
                     <li>
                         
-                        <p><a href="https://www.usenix.org/conference/usenixsecurity23/presentation/falk">GigaDORAM: Breaking the Billion Address Barrier</a> <b>(USENIX '23)</b> <br>
-                            B. Falk, R. Ostrovsky, M. Shtepel, J. Zhang<br>
+                        <p><a href="https://www.usenix.org/conference/usenixsecurity23/presentation/falk">GigaDORAM: Breaking the Billion Address Barrier</a> (USENIX '23) <br>
+                            B. Falk (UPenn), R. Ostrovsky, M. Shtepel, J. Zhang (UCLA)<br>
+                            <small>We show devise and implement a Distributed ORAM construction orders of magnitude more efficient than prior work. <a href="">Code</a>, <a href="https://www.youtube.com/watch?v=-daN2Cpt1FI">Talk</a>. </small>
                         </p> 
-                       
                         
                     </li>
                     <br>
                     <li><a href="https://doi.org/10.1080/17445760.2021.2016754"> "On Totalization of Computable Functions in a Distributive
-                            Environment" </a>, <b>(International Journal of Parallel, Emergent and
-                        Distributed Systems (GPAA))</b> <br>
-                        M. Burgin, M.Shtepel
+                            Environment" </a>,(International Journal of Parallel, Emergent and
+                        Distributed Systems (GPAA))<br>
+                        M. Burgin, M.Shtepel<br>
+                        <small><i>We investigate which classes of computations can be <i>totalized</i>, i.e. modified so every input maps to an output in a `consistent' way<small></i>
                     </li>
                 </ol>
                 <br>
@@ -202,77 +212,55 @@
 
 
 
-            <div id="contactSec" class="section">
+            <!-- <div id="contactSec" class="section">
                 <h4 class="section-title">Contact Me!</h4>
                 <p>Considering dropping me a line? Please, do not hesitate! I am happy to receive any and all
                     questions,
                     offers, suggestions and vegan steak recipes (but please, nothing more 😉).
                     <b>first.last<i>at</i> gmail.com</b></p>
 
-            </div>
+            </div> -->
             <div class="section">
-                <h4 class="section-title">Selected Photos</h4>
+                <h4 id="Selected-photos" class="section-title">Selected Photos</h4>
                 <div class="image-flexbox">
-
+                    <div class="selcted-image" style="flex:.33">
+                     <img style="max-height: 74vh;
+                        " src="images/inspect_wandb.png">
+                        <p>Curly boys present an early version of <a href="https://github.com/DanielPolatajko/inspect_wandb">Inspect WandB</a> @ <a href="https://www.cambridgeaisafety.org/mars">MARS 3.0</a></p>
+                    </div> 
                     <div class="selcted-image" style="flex:.33">
                         <img style="
-                            max-height: 55vh;
+                            max-height: 74vh;
                         " src="images/friendsgiving_2024.jpeg">
                         <p>Friendsgiving at Gaurav and Barry's, Friendship, Pitt.</p>
-                    </div> 
+                    </div>  
                     <div class="selcted-image" style="flex:.33">
                         <img style="
-                            max-height: 55vh;
-                        " src="images/chicago_bound_FOCS_2024.jpeg">
-                        <p>CMU squad Chicago bound!</p>
-                    </div> 
-                    <div class="selcted-image" style="flex:.33">
-                        <img style="
-                            max-height: 55vh;
+                            max-height: 74vh;
                         " src="images/theory_outing_1_2024.jpeg">
-                        <p>Theory group outing to some Pittsburgh brewery 🍻</p>
+                        <p>Stereotypical Theory group outing = brewery 🍻</p>
                     </div> 
-                </div>               
-
+                </div>
+                <div class="hidden-photos" id="hiddenPhotos">
 
                 <div class="image-flexbox">
-                    <div class="selcted-image" style="flex:.2">
-                        <img style="
-                            max-height: 55vh;
-                        " src="images/eric_standing.jpeg">
-                        <p>Jus' Chillin' 🙃</p>
+                    <div class="selcted-image" style="flex:.4">
+                        <img src="images/ucla_theory_guild_fun_edited.JPG">
+                        <p><a href="ucla_theory_guild.html">UCLA Theory Guild</a> last meeting of winter 23.' Say, "lattices!"</p>
                     </div>
-                    <div class="selcted-image" style="flex:.47">
-                        <img style="
-                            max-height: 55vh;
-                        " src="images/delaware_gw.jpeg">
-                        <p>Took my son Matthew on a trip to show him where George Washington crossed the Delaware River 🇺🇸</p>
+                    <div class="selcted-image" style="flex:.3">
+                        <img src="images/last_night_at_hack_lodge.JPG">
+                        <p>Last night at <a href="https://hacklodge.org">Hack Lodge 23'</a>. Catch our live, "deliverable" demos <a href="https://youtube.com/playlist?list=PLNK7oFq6eaEyadUK2RQU8AQjAmHL82if4">here!</a></p>
                     </div>
                     <div class="selcted-image" style="flex: .45;">
                         <img src="images/summer_highschool_gathering.jpeg">
                         <p>Lil' high school reunion</p>
                     </div>
                 </div>
-
                 <div class="image-flexbox">
-                    <div class="selcted-image" style="flex:.4">
-                        <img src="images/ucla_theory_guild_fun_edited.JPG">
-                        <p><a href="ucla_theory_guild.html">UCLA Theory Guild</a> in the last meeting of winter 23.' Say, "lattices!"</p>
-                    </div>
-                    <div class="selcted-image" style="flex:.3">
-                        <img src="images/last_night_at_hack_lodge.JPG">
-                        <p>Last night at <a href="https://hacklodge.org">Hack Lodge 23'</a>. Catch our live, "deliverable" demos <a href="https://youtube.com/playlist?list=PLNK7oFq6eaEyadUK2RQU8AQjAmHL82if4">here!</a></p>
-                    </div>
                     <div class="selcted-image" style="flex: .395;">
                         <img src="images/bye_to_mattt_and_eric.JPG">
-                        <p>Saying bye to roomies Matt (left) and Eric (right) on last night in undergrad</p>
-                    </div>
-
-                </div>
-                <div class="image-flexbox">
-                    <div class="selcted-image" style="flex:.4">
-                        <img src="images/jacob_whiteboard.jpg">
-                        <p>Research partner <a href="https://www.linkedin.com/in/jacob-zhang-9a767a140/">Jacob Zhang</a> wearing the cryptography shirt I made for him in front of the whiteboard we hung in our room!</p>
+                        <p>Final goobyes with roomies Matt (left) and Eric (right).</p>
                     </div>
                     <div class="selcted-image" style="flex:.3">
                         <img src="images/wigderson_poster.jpg">
@@ -285,39 +273,27 @@
 
                 </div>
                 <div class="image-flexbox">
-                    <div class="selcted-image" style="flex:.4">
-                        <img src="images/kyleesBirthday.jpg">
-                        <p>Celebrating Kylee's Birthday</p>
-                    </div>
-                    <div class="selcted-image" style="flex:.3">
-                        <img src="images/Russel'sParadox.jpg">
-                        <p>Wearing my favorite paradox</p>
+                    <div class="selcted-image" style="flex:.30">
+                        <img src="images/atJoshTree.jpg">
+                        <p>At the Josh tree park</p>
                     </div>
                     <div class="selcted-image" style="flex: .395;">
                         <img src="images/goneSurfingResized.jpg">
                         <p>After a relaxing surf</p>
                     </div>
-
-                </div>
-                <br>
-                <div class="image-flexbox">
-                    <div class="selcted-image" style="flex:.30">
-                        <img src="images/atJoshTree.jpg">
-                        <p>At the Josh tree park</p>
-                    </div>
-                    <div class="selcted-image" style="flex:.3">
-                        <img src="images/lexAndI.jpg">
-                        <p>“Remember, all I’m offering is the truth. Nothing more."</p>
-                    </div>
                     <div class="selcted-image" style="flex: .395;">
                         <img src="images/classicalyPositioned.jpg">
-                        <p>As you may find me on a regular afternoon...</p>
+                        <p>As you may find me on a regular undergrad afternoon...</p>
                     </div>
 
                 </div>
+                </div>
+                
+                <button class="see-more-btn" onclick="togglePhotos()" id="seeMoreBtn">See more!</button>
+                
                 <div class="section">
-                    <h4 class="section-title">Academic Obligation</h4>
-                    As an (aspiring) academic, I feel obligated to say there will be a blog coming soon. Don't worry! I will update twice during summer, then never again after 😏. If it will ever exist, it will probably be <a href="https://matanshtepel.substack.com/">here</a>.
+                    <h4 id="Academic-aspiration" class="section-title">Academic Aspiration</h4>
+                <p>As an (aspiring) academic, I feel obligated to say there will be a blog coming soon. Don't worry! I will update twice during summer, then never again after 😏. If it will ever exist, it will probably be <a href="https://matanshtepel.substack.com/">here</a>.</p>
                     <!--
                     To wrap it up, here are some personal favorites from the many facets of life:
                     <div class="split-page-writing">
@@ -350,9 +326,36 @@
                     -->
                 </div>
                 <footer>
-                    Created by Matan Shtepel, August 2021. Last edited September 2023
+                    Created by Matan Shtepel, August 2021. Last edited September 2025.
                 </footer>
             </div>
+
+            <script>
+            function togglePhotos() {
+                const hiddenPhotos = document.getElementById('hiddenPhotos');
+                const btn = document.getElementById('seeMoreBtn');
+                
+                if (hiddenPhotos.classList.contains('show')) {
+                    hiddenPhotos.classList.remove('show');
+                    btn.textContent = 'See more!';
+                    // Scroll back up to the first visible photos section
+                    const firstVisiblePhotoSection = document.querySelector('.image-flexbox');
+                    if (firstVisiblePhotoSection) {
+                        firstVisiblePhotoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                } else {
+                    hiddenPhotos.classList.add('show');
+                    btn.textContent = 'Show less';
+                    // Small delay to let content expand, then scroll to new photos
+                    setTimeout(() => {
+                        const firstHiddenPhoto = hiddenPhotos.querySelector('.image-flexbox');
+                        if (firstHiddenPhoto) {
+                            firstHiddenPhoto.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }, 100);
+                }
+            }
+            </script>
 
             <!--
 To do: 

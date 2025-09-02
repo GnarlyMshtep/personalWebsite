@@ -12,13 +12,18 @@
 }
 
 body {
-    font-family: "Computer Modern Serif", sans-serif;
+    font-family: 'TT Commons Mono', "Computer Modern Serif", sans-serif;
+}
+
+b, strong {
+    font-weight: 700;
 }
 
 .main-title {
     padding: 5px;
     font-size: 3.5rem;
     color: var(--brown);
+    margin-left: -0.25em;
 }
 
 .page-wrapper {
@@ -27,28 +32,38 @@ body {
 }
 
 .main-pic-container img {
-    min-width: 15vw;
-    max-width: 100%;
-    min-width: 20vw;
+    max-width: 37vw;
+    min-width: 23vw;
     min-height: 30vh;
     height: auto;
     object-fit: contain;
 
 }
 
+.main-portrait {
+    object-fit: cover;
+    /* crop 20% left, 65% top, 20% right, 0% bottom */
+    /* clip-path: inset(30% 15% 10% 15%); */
+    object-position: 50% 15%;
+    vertical-align: top;
+}
+
 .main-pic-container {
     margin-right: 20px;
     margin-bottom: 10px;
-    margin-top: 30px;
 }
 
 .col-flexbox {
     display: flex;
     flex-flow: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: 20px;
 }
 
 .main-description {
-    margin: 1vh 8vw 0 2vw;
+    margin: 1vh 0 0 2vw;
+    flex: 1 1 auto;
 }
 
 .quote {
@@ -73,9 +88,53 @@ body {
 }
 
 .section-title {
-    font-size: 2em;
+    font-size: 2rem !important;
+    line-height: 1.2;
     padding: .5em .3em;
     color: var(--brown);
+    margin-left: -0.5em;
+}
+
+/* Headings and small adjustments */
+h1, h2, h3, h4, h5, h6 {
+    font-style: italic;
+}
+
+small {
+    font-size: 0.75em;
+}
+
+.mono {
+    font-family: 'TT Commons Mono', 'Courier New', monospace;
+}
+
+.math {
+    font-family: "Computer Modern Serif", serif;
+    font-style: italic;
+}
+
+.see-more-btn {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    background-color: var(--brown);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.see-more-btn:hover {
+    background-color: var(--lightBlack);
+}
+
+.hidden-photos {
+    display: none;
+}
+
+.hidden-photos.show {
+    display: block;
 }
 
 /*------------SLECTED PHOTOS BEGINS--------------*/
@@ -83,6 +142,12 @@ img {
     width: 100%;
     height: auto;
     vertical-align: middle;
+}
+
+/* Ensure regular paragraph sizing inside sections */
+.section p {
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 .image-flexbox {
@@ -97,13 +162,14 @@ img {
 .selcted-image p {
     padding-top: 7px;
     font-style: italic;
-
+    font-size: 1rem;
+    line-height: 1.35;
 }
 
 .selcted-image img {
     min-width: 15vw;
     max-width: 95%;
-    height: 30vh;
+    height: 40.5vh;
     height: auto;
     object-fit: cover;
 }
@@ -182,10 +248,14 @@ a:hover {
         margin: 0 auto;
     }
     
+    .main-title {
+        font-size: 2.5rem;
+    }
 
     .col-flexbox {
         display: flex;
         flex-flow: column;
+        gap: 1rem;
     }
 
     .image-flexbox {
@@ -193,6 +263,39 @@ a:hover {
         flex: 33%;
         text-align: center;
         flex-flow: column;
+    }
+
+    .selcted-image img {
+        max-height: 35vh !important;
+    }
+
+    .selcted-image p {
+        font-size: 1rem;
+        margin-bottom: 4px;
+    }
+
+    .see-more-btn {
+        display: block;
+        margin: 1rem auto;
+        padding: 0.5rem 1rem;
+        background-color: var(--brown);
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: inherit;
+    }
+
+    .see-more-btn:hover {
+        background-color: var(--lightBlack);
+    }
+
+    .hidden-photos {
+        display: none;
+    }
+
+    .hidden-photos.show {
+        display: block;
     }
 
 }
